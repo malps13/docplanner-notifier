@@ -1,0 +1,35 @@
+{
+  "name": "docplanner-notifier",
+  "version": "0.0.1",
+  "description": "Help book overwhelmed doctors from Docplanner platform - periodically check if doctor is available and then notify via SMS",
+  "main": "index.js",
+  "dependencies": {
+    "node-schedule": "^1.1.1",
+    "smsapi-pl": "^0.2.0",
+    "body-parser": "^1.13.3",
+    "cheerio": "^0.22.0",
+    "sync-request": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "reposi1ory": {
+    "type": "git",
+    "url": "https://github.com/malps13/docplanner-notifier"
+  },
+  "keywords": [
+    "health",
+    "docplanner",
+    "znanylekarz",
+    "smsapipl",
+    "smsapi",
+    "sms",
+    "notifier"
+  ],
+  "author": "Wojtek Jodel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malps13/docplanner-notifier/issues"
+  },
+  "homepage": "https://github.com/malps13/docplanner-notifier"
+}
