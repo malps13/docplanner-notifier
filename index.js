@@ -40,6 +40,8 @@ if (!smsPhoneNumber || !smsUsername || !smsPassword || !docplannerUrl) {
   return failure();
 }
 
+sendSms("Docplanner notifier active!", smsPhoneNumber);
+
 var job = schedule.scheduleJob('*/10 * * * *', function() {
   var html = syncRequest('GET', docplannerUrl);
 
