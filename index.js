@@ -40,7 +40,7 @@ if (!smsPhoneNumber || !smsUsername || !smsPassword || !docplannerUrl) {
   return failure();
 }
 
-var job = schedule.scheduleJob('* * * * *', function() {
+var job = schedule.scheduleJob('*/10 * * * *', function() {
   var html = syncRequest('GET', docplannerUrl);
 
   // check if we got HTML
